@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">
+            <h3 class="mb-0">Fantasy World</h3>
+        </a>
+        <ul class="nav text-center justify-content-center flex-column flex-md-row navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="index.html#onas" class="nav-link text-white">O nás</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#galerie" class="nav-link text-white">Galerie</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#ohlas" class="nav-link text-white">Ohlas</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#adresa" class="nav-link text-white">Adresa</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#kontakt" class="nav-link text-white">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand"><h3 class="mb-0">Aurora Grove</h3></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#onas" class="nav-link">O nás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#galerie" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ohlas" class="nav-link">Adresa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#adresa" class="nav-link">Ohlas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- ======================================================== -->
+
+    <section id="intro" class="d-flex justify-content-center align-items-center">
+        <div class="container text-center text-white">
+            <h2 class="display-3 font-weight-bolder">Fantasy World</h2>
+            <h3 class="display-5">Ostravská Galerie OkinRip</h3>
+
+            <button id="book" class="btn btn-lg btn-info px-5" data-toggle="modal" data-target="#rezervace" data-toggle="tooltip" data-placement="bottom" title="Rezervuj si lístky jednoduše a rychle">BOOK NOW</button>
+
+            <a href="#" id="cudel" class="btn btn-outline-primary btn-light btn-lg animace" data-toggle="popover" title="Poop!" data-content="Nikam neodkazuje, ať si můžeš užít popover fci :).. Loading link uplně dole">POPOVER</a>
+        </div>
+    </section>
+
+
+<!-- ======================= POKUS ======================== -->
+<div class="modal" id="rezervace" tabindex="-1" role="dialog">
+    <div class="modal-dialog bg-white" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Rezervace míst</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p>Ještě stál máme volná místa! Tak neváhejte a rezrvujte si místa.</p>
+                <p>Vstupné: 200 Kč/os</p>
+                <form class="m-10">
+                    <div class="form-group">
+                        <label for="jmeno">Jméno: </label>
+                        <input type="text" class="form-control" id="jmeno" placeholder="Regina Phallange">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Email: </label>
+                        <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="pocet">Počet osob</label>
+                        <input type="number"  min=1 value=1 class="form-control" id="pocet">
+                    </div>
+                    <div class="form-group">
+                    <label for="poznamka">Poznámka</label>
+                    <textarea class="form-control" id="poznamka" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======================= KONEC POKUSU ======================== -->
+
+<a name="onas">
+    <section id="oNas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 p-5" id="c1-font">
+                    <img src="images/rob_boss.jpeg" alt="Rob_Boss" class="img-fluid d-none d-md-inline">
+                    <h4 class="pt-2">Rob Boss</h4>
+                    <p>Jakožto jedna z mála výstav se můžeme pyšnit obrazy světově známého umělce Roba Bosse, který se proslavil svým jedinečným přístupem k umění.</p>
+                </div>
+
+                <div class="col-md-4 p-5" id="c2-font">
+                    <img src="images/historie.jpg" alt="prvni_vystava" class="img-fluid d-none d-md-inline">
+                    <h4 class="pt-2">Historie</h4>
+                    <p>S výstavou digitálního umění jsme začali začátkem r. 2018 na Masayrkově náměstí v Ostravě. A díky vysokému zájmu veřejnosti jsme se dostali tam, kde jsme teď.</p>
+                </div>
+
+                <div class="col-md-4 p-5" id="c3-font">
+                    <img src="images/tematika.jpg" alt="tematika_vystavy" class="img-fluid d-none d-md-inline">
+                    <h4 class="pt-2">Tématika</h4>
+                    <p> Zaměřujeme se především na moderní umění 21.století, ve stylu digi-artu, na rozmanitá témata, jako fantasy, sci-fi a podobně. Cílem je ukázat něco nového a svěžího ve světe umění.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</a>
+
+<a name="galerie">
+    <section id="galerie" class="d-flex justify-content-center align-items-center">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/gallery1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gallery2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gallery3.jpg" alt="Third slide">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    </a>
+
+    <div id="box" class="bg-dark"></div>
+
+<a name="ohlas">
+    <section id="ohlas">
+        <div class="card-columns m-5">
+            <div class="card p-3 bg-primary text-white">
+                <blockquote class="blockquote mb-0 card-body">
+                  <p>Znal jsem afričana z Martiniku co byl z Antil | Á doktore! Jak se máte? To je sranda včera jsem na vás myslel. Zvrhnul jsem kečup na prostěradlo. No děsná skvrna. Řek jsem si blbý, že tu neni | Když jsem byl malý, chtěl jsem se stát žokejem, ale pak jsem vyrostl, tak jsem se jim nestal.</p>
+                  <footer class="blockquote-footer text-white">
+                    <small>
+                      Kentán z Montarži
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                  <p>Půjdeš za Zorra, ty blbče? | Uvidí obrovskýho blbce, jak se zjeví: "Ahoj, jmenuju se Kentán a jsem z Montarži."</p>
+                  <footer class="blockquote-footer">
+                    <small class="text-muted">
+                      Ruby z Pito
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                  <p>Cesta spravedlivého ze všech stran lemována jest nespravedlností, sobectvím a tyranií lidské zloby. Požehnán buď ten, kdo ve jménu lásky a dobré vůle vyvede slabé z údolí temnoty, neb ten jest skutečným pastýřem a spasitelem zbloudilých dětí. A já srazím k zemi mocným trestem a divokým hněvem všechny, kdo se pokusí otrávit a zničit mé bratry. A když uvalím svou mstu na tebe, seznáš, že jméno mé je Bůh!</p>
+                  <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Jules Winnfield
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+              <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                  <p>Víš, co dávaj v Holandsku na hranolky místo kečupu? Majonézu. Na vlastní oči jsem viděl, jak to v tý sračce topěj.</p>
+                  <footer class="blockquote-footer">
+                    <small class="text-muted">
+                      Vincent Vega
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+        </div>
+    </section>
+</a>
+
+
+    <section id="kontakt" class="d-flex justify-content-center align-items-center bg-dark m-10">
+        <div class="container text-center text-white py-5">
+            <h4>Nepropásni žádnou novinku</h4>
+            <form action="" class="form-inline d-flex justify-content-center align-items-center">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+<a name="adresa">
+    <section>
+        <div class="container mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10292.170117925976!2d18.2694515!3d49.8416584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe005c1a8ed79f496!2sOkin%20BPS!5e0!3m2!1scs!2scz!4v1606476187474!5m2!1scs!2scz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+</a>
+
+<a name="kontakt">
+<section id="kontakty">
+    <section class="d-flex justify-content-center align-items-center bg-dark p-5">
+        <div class="container text-center text-white">
+            <p>Email: fantasygallery@gmail.com</p>
+            <p>Mobil: +420 123 456 789</p>
+            <p>Adresa: U tvoji mamy 69, Cotijepotom, 123 45</p>
+            <p>Instagram: @fantasy_gallery_cz </p>
+            <p>Twitter: @fantasy_gallery_cz </p>
+        </div>
+    </section>
+    <section id="one" class="bg-light p-2">
+        <div class="row d-flex justify-content-center align-content-around" >
+        <i class="fas fa-at fa-2x"></i>
+        <i class="fas fa-phone-square fa-2x"></i>
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-twitter-square fa-2x"></i>
+        <i class="fab fa-tiktok fa-2x"></i>
+        <i class="fab fa-instagram-square fa-2x"></i>
+        </div>
+    </section>
+</section>
+</a>
+
+<section id="load" class="bg-light">
+    <div class="row d-flex justify-content-center align-content-around py-5" >
+    <a href="button.html"><i class="fas fa-spinner fa-4x"></i>
+    </div></a>
+</section>
+
+
+    <!--    LINKS    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>  
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+
+    </script>
+    </body>
+</html>

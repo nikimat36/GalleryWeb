@@ -1,0 +1,162 @@
+@import "../BS/scss/bootstrap";
+body {
+    font-family: "Raleway", sans-serif; 
+}
+
+#intro {
+    position: relative;
+    min-height: 650px;
+    background: linear-gradient(rgba(0,0,0,0.5)), url(../images/intro2.jpg) bottom center / cover no-repeat;
+}
+
+#c1-font {
+    font-family: 'Nunito', sans-serif;
+}
+
+#c2-font {
+    font-family: 'Source Code Pro', monospace;
+}
+
+#c3-font {
+    font-family: 'Comfortaa', cursive;
+}
+
+#carouselExampleControls {
+    max-width: 700px;
+}
+
+#ohlas {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#box {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+#kontakt{
+    position: relative;
+}
+
+i{
+    padding: 0 10px;
+}
+
+i:hover {
+    color: rgb(0, 132, 255);
+    cursor: pointer;
+}
+
+#intro {
+    a {
+        position: relative;
+        overflow: hidden;
+        transform-origin: center;
+    }
+    
+    a::before {
+        content: 'POPOVER';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(3);
+        transform-origin: center;
+        opacity: 0;
+        text-align: center;
+        vertical-align: middle;
+        padding: 7px;
+    }
+    
+    a:hover::before {
+        transform: scale(1);
+        transition-duration: 1s;
+        opacity: 1;
+    }
+    
+    .animace {
+        transition-property: transform;
+        transition-duration: 1s, 3s;   
+        transition-timing-function: linear;        
+    }
+}
+
+#load {
+    a{
+        transform-origin: center;
+    }
+    a:hover{
+        transform: rotate(360deg);
+        transition-duration: 1s;
+    }
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+li:hover {
+    font-weight: bolder;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+      -webkit-column-count: 1;
+              column-count: 1;
+      -webkit-column-gap: 1.25rem;
+              column-gap: 1.25rem;
+      orphans: 1;
+      widows: 1;
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  /*---*/
+  @media (max-width: 1500px) {
+    /*576px*/
+    .card-body {
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .card-columns {
+      -webkit-column-count: 1;
+      column-count: 1;
+      -webkit-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      orphans: 1;
+      widows: 1;
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    /*576px*/
+    .card-columns {
+      -webkit-column-count: 3;
+      column-count: 3;
+      -webkit-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      orphans: 1;
+      widows: 1;
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  
